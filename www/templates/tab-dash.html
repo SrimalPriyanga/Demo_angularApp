@@ -1,28 +1,56 @@
 <ion-view view-title="Dashboard">
-  <ion-content class="padding">
-    <div class="list card">
-      <div class="item item-divider">Recent Updates</div>
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
+    <ion-content class="padding">
+        <div class="list card">
+            <div class="item item-divider">Recent Updates</div>
+            <div class="item item-body">
+                <div>
+                    There is a fire in <b>sector 3</b>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Health</div>
-      <div class="item item-body">
-        <div>
-          You ate an apple today!
+        <div class="list card">
+            <div class="item item-divider">Data Binding Examples</div>
+            <div class="item item-body">
+                <label class="item item-input">
+                    <span class="input-label">Type your name </span>
+                    <input type="text" placeholder="here....." ng-model="name"/>
+                </label>
+
+                <h3>Hi <b>{{name}}</b></h3>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="list card">
-      <div class="item item-divider">Upcoming</div>
-      <div class="item item-body">
-        <div>
-          You have <b>29</b> meetings on your calendar tomorrow.
+        <div class="list card">
+            <div class="item item-divider">Calculator</div>
+            <div class="item item-body">
+                
+                <div class="row">
+                    <div class="col">
+                        <label class="item item-input ">
+                            <input type="text" class="" placeholder="Num1" ng-model="cal.num1" />
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label class="item item-input ">
+                            <span class="col">+</span>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label class="item item-input ">
+                            <input type="text" class="" placeholder="Num1" ng-model="cal.num2" />
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label class="item item-input ">
+                            <span>{{ cal.num1 }} {{ cal.num2 }}</span>
+                        </label>
+                    </div>
+                </div>
+
+                <label class="item item-input ">
+                    <input type="text" class="col col-1" placeholder="Num1" ng-model="cal.num2"/>
+                </label>
+                <h3>Hi <b>{{name}}</b></h3>
+            </div>
         </div>
-      </div>
-    </div>
-  </ion-content>
+    </ion-content>
 </ion-view>
