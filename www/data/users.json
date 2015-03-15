@@ -1,0 +1,11 @@
+users = 
+[
+	{
+		name: 'Srimal',
+		age: 24
+	},
+	{
+		name: 'Priyanga',
+		age: 23
+	}
+]

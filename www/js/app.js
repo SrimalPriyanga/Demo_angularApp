@@ -1,3 +1,5 @@
+(function () {
+  "use strict"
 // Ionic Starter App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
@@ -37,13 +39,12 @@ angular.module('myapp', ['ionic', 'myapp.controllers', 'myapp.services'])
   })
 
   // Each tab has its own nav history stack:
-
-  .state('myapp.dash', {
-    url: '/dash',
+  .state('myapp.home', {
+    url: '/home',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-home': {
+        templateUrl: 'templates/tab-home.html',
+        controller: 'HomeCtrl'
       }
     }
   })
@@ -97,6 +98,8 @@ angular.module('myapp', ['ionic', 'myapp.controllers', 'myapp.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/myapp/dash');
+  $urlRouterProvider.otherwise('/myapp/home');
 
 });
+
+})();
